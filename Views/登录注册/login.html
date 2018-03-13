@@ -1,0 +1,65 @@
+<!doctype html>
+<html class="specil-bg" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="msapplication-tap-highlight" content="no">
+    <script src="../../Conent/Scripts/fixScreen.js"></script>
+    <link rel="stylesheet" href="../../Conent/Fonts/Awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../Conent/Tools/dialog2/css/dialog.css">
+    <link rel="stylesheet" href="../../Conent/Styles/common.css">
+</head>
+<body>
+<div class="root">
+    <div class="navbar">
+        <div class="navbar-inner navbar-previous" aria-hidden="true">
+            <div class="left">
+                <a href="javascript:;" class="back">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            </div>
+            <div class="title sliding">登录</div>
+            <div class="right"></div>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="page-content">
+            <form class="login">
+                <div class="logo f-tac">
+                    <span></span>
+                </div>
+                <div class="login-item">
+                    <i class="icon-cal login-item-icon"></i>
+                    <input class="login-input" type="text" name="phone" placeholder="手机号">
+                </div>
+                <div class="login-item">
+                    <i class="icon-lock login-item-icon"></i>
+                    <i class="icon-see login-item-icon" id="look"></i>
+                    <input class="login-input" type="password" name="password" placeholder="密码">
+                </div>
+                <div class="login-item">
+                    <i class="icon-iphone login-item-icon"></i>
+                    <i class="icon-qcord login-item-icon" id="qcode"></i>
+                    <input class="login-input" type="text" name="code" placeholder="验证码">
+                </div>
+                <div class="login-item">
+                    <a href="javascript:;" class="login-btn" id="submit">登录</a>
+                </div>
+                <div class="login-forget f-cb">
+                    <div class="f-fl">还没有账号？<a href="javascript:;" class="link">立即注册</a></div>
+                    <div class="f-fr"><a href="javascript:;" style="color: #cfd0f5;">忘记密码？</a></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="../../Conent/Tools/zepto/zepto.min.js"></script>
+<script src="../../Conent/Tools/dialog2/dialog.min.js"></script>
+<script src="../../Conent/Scripts/common.js"></script>
+<script src="../../Conent/Scripts/userlogin/login.js"></script>
+</body>
+</html>
