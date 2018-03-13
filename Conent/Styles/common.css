@@ -144,6 +144,22 @@ body {
 .f-usn{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;}
 .link{color: #f2a500;}
 
+
+.specil-bg{
+    background-image: url("../Images/login_bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.index-bg{
+    background-image: url("../Images/index_bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.specil-bg body,
+.index-bg body{
+    background: none;
+}
+
 .navbar {
     position: relative;
     left: 0;
@@ -310,7 +326,7 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding: 0 20px;
-    display: -webkit-box;
+    /*display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -321,9 +337,25 @@ body {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
+    -webkit-justify-content: space-around;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: space-around;*/
+}
+.footer .item{
+    display: inline-block;
+    vertical-align: middle;
+    width: 32%;
+}
+.footer .pic{
+    height: 0.7rem;
+}
+.footer .name{
+    margin-top: -0.15rem;
+    font-size: 0.2rem;
+    color: #fff;
+}
+.footer .item.active .name{
+    color: #c083ff;
 }
 
 .item-checkbox{
@@ -378,15 +410,6 @@ label.item-checkbox input[type="checkbox"]:checked ~ .icon-checkbox:after,
     background: no-repeat center;
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20x%3D'0px'%20y%3D'0px'%20viewBox%3D'0%200%2012%209'%20xml%3Aspace%3D'preserve'%3E%3Cpolygon%20fill%3D'%23ffffff'%20points%3D'12%2C0.7%2011.3%2C0%203.9%2C7.4%200.7%2C4.2%200%2C4.9%203.9%2C8.8%203.9%2C8.8%203.9%2C8.8%20'%2F%3E%3C%2Fsvg%3E");
     background-size: 12px 9px;
-}
-
-.specil-bg{
-    background-image: url("../Images/login_bg.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-.specil-bg body{
-    background: none;
 }
 
 .login{
@@ -553,6 +576,146 @@ label.item-checkbox input[type="checkbox"]:checked ~ .icon-checkbox:after,
     text-align: center;
     border: 0;
 }
+
+.icon-footer-ncup{
+    width: 0.67rem;
+    height: 0.7rem;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: initial;
+    background-image: url("../Images/footer-ncup.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.icon-footer-ngame{
+    width: 0.76rem;
+    height: 0.73rem;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: initial;
+    background-image: url("../Images/footer-ngame.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.icon-footer-nmy{
+    width: 0.56rem;
+    height: 0.67rem;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: initial;
+    background-image: url("../Images/footer-nmy.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.icon-index-voice{
+    width: 0.32rem;
+    height: 0.28rem;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: initial;
+    background-image: url("../Images/icon-index-voice.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.icon-index-topup{
+    width: 1.18rem;
+    height: 1.18rem;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: initial;
+    background-image: url("../Images/icon-index-topup.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.icon-index-record{
+    width: 1.18rem;
+    height: 1.18rem;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: initial;
+    background-image: url("../Images/icon-index-record.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.icon-index-activi{
+    width: 1.18rem;
+    height: 1.18rem;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: initial;
+    background-image: url("../Images/icon-index-activi.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.icon-index-contact{
+    width: 1.18rem;
+    height: 1.18rem;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: initial;
+    background-image: url("../Images/icon-index-contact.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.item.active .icon-footer-ngame{
+    background-color: initial;
+    background-image: url("../Images/footer-agame.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.item.active .icon-footer-ncup{
+    background-color: initial;
+    background-image: url("../Images/footer-acup.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.item.active .icon-footer-nmy{
+    background-color: initial;
+    background-image: url("../Images/footer-amy.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.swiper-pagination-bullet {
+    border-radius: 100%;
+    background: #ffffff;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #a671da;
+}
+
+.index-notice{
+    padding: 0 0.2rem;
+    height: 0.44rem;
+    line-height: 0.4rem;
+    background-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0px 4px 10px 0px
+    rgba(0, 0, 0, 0.29);
+}
+
+.index-notice a{
+    margin-left: 0.15rem;
+    font-size: 0.22rem;
+    color: #fff;
+}
+
+.index-fnc{
+    margin: 0.36rem 0;
+}
+.index-fnc .item{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.index-fnc .name{
+    font-size: 0.22rem;
+    color: #fff;
+}
+
 
 /* === List View === */
 .list {
