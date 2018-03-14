@@ -352,7 +352,7 @@ body {
     height: 0.7rem;
 }
 .footer .name{
-    margin-top: -0.15rem;
+    /*margin-top: -0.15rem;*/
     font-size: 0.2rem;
     color: #fff;
 }
@@ -475,6 +475,10 @@ label.item-checkbox input[type="checkbox"]:checked ~ .icon-checkbox:after,
     line-height: 0.42rem;
     font-size: 0.22rem;
     color: #676687;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 .icon-cal{
     top: 0.2rem;
