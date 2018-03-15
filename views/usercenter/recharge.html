@@ -1,0 +1,297 @@
+<!doctype html>
+<html class="specil-bg" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>充值</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="msapplication-tap-highlight" content="no">
+    <script src="../../Conent/Scripts/fixScreen.js"></script>
+    <link rel="stylesheet" href="../../Conent/Fonts/Awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../Conent/Tools/animated/animate.min.css">
+    <link rel="stylesheet" href="../../Conent/Styles/common.css">
+</head>
+<body>
+<div class="root">
+    <div class="navbar">
+        <div class="navbar-inner navbar-previous" aria-hidden="true">
+            <div class="left">
+                <a href="javascript:;" class="back">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            </div>
+            <div class="title sliding">充值</div>
+            <div class="right"></div>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="page-content">
+            <div>
+                <form>
+
+                    <div class="my-recharge-hd">
+                        <div class="f-fs028">充值金额：<span class="link js-sel-rech-sprice">99.99</span></div>
+                        <div class="color-tip f-fs022 f-mat15">单笔充值限额：最低100元，最高5000元</div>
+                        <div class="f-cb js-select-price">
+                            <div class="recharge-btn js-sel-rech-btn active" data-value="99.99">￥99.99</div>
+                            <div class="recharge-btn js-sel-rech-btn" data-value="499.99">￥499.99</div>
+                            <div class="recharge-btn js-sel-rech-btn" data-value="999.99">￥999.99</div>
+                            <div class="recharge-btn js-sel-rech-btn" data-value="1999.99">￥1999.99</div>
+                            <div class="recharge-btn js-sel-rech-btn" data-value="4999.99">￥4999.99</div>
+                            <input type="number" class="recharge-btn js-sel-set-btn" maxlength="7" placeholder="其他金额">
+                        </div>
+                        <input type="hidden" id="realRechargePrice" value="99.99">
+                    </div>
+
+                    <div class="my-recharge-bd">
+                        <div class="f-fs028 color-white">充值方式：
+                            <span class="color-tip">如若充值未到账，请</span>
+                            <a href="javascript:;" class="link f-unline f-sits">联系客服</a>
+                        </div>
+                    </div>
+
+                    <div class="recharge-scene active js-scene-sel-card">
+                        <div class="my-recharge-fd color-cus">
+                            <div class="item">
+                                <label class="recharge-radio2">
+                                    <div class="item-cname f-cb">
+
+                                        <div class="f-fl">
+                                            <i class="icon-recharge-card"></i>
+                                            <span class="f-ib f-fs028">银行卡转账</span>
+                                        </div>
+                                        <div class="f-fr">
+                                            <input type="radio" name="rechargeType">
+                                        </div>
+                                    </div>
+                                </label>
+                                <div class="item-content f-cb">
+                                    <div class="item-yhk f-toe">
+                                        <label class="recharge-radio">
+                                            <span class="f-ib"><input type="radio" name="rechargeYhk"></span>
+                                            <span class="f-ib">中国工商银行1</span>
+                                        </label>
+                                    </div>
+                                    <div class="item-yhk f-toe">
+                                        <label class="recharge-radio">
+                                            <span class="f-ib"><input type="radio" name="rechargeYhk"></span>
+                                            <span class="f-ib">中国工商银行2</span>
+                                        </label>
+                                    </div>
+                                    <div class="item-yhk f-toe">
+                                        <label class="recharge-radio">
+                                            <span class="f-ib"><input type="radio" name="rechargeYhk"></span>
+                                            <span class="f-ib">中国工商</span>
+                                        </label>
+                                    </div>
+                                    <div class="item-yhk f-toe">
+                                        <label class="recharge-radio">
+                                            <span class="f-ib"><input type="radio" name="rechargeYhk"></span>
+                                            <span class="f-ib">中国工商银行4</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <label class="recharge-radio2">
+                                    <div class="item-cname f-cb">
+                                        <div class="f-fl">
+                                            <i class="icon-recharge-wechat"></i>
+                                            <span class="f-ib f-fs028">微信钱包支付</span>
+                                        </div>
+                                        <div class="f-fr">
+                                            <input type="radio" name="rechargeType">
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="item">
+                                <label class="recharge-radio2">
+                                    <div class="item-cname f-cb">
+                                        <div class="f-fl">
+                                            <i class="icon-recharge-card"></i>
+                                            <span class="f-ib f-fs028">银联快捷支付</span>
+                                        </div>
+                                        <div class="f-fr">
+                                            <input type="radio" name="rechargeType">
+                                        </div>
+                                    </div>
+                                </label>
+                                <div class="item-content">
+                                    <div class="item-kjzf f-toe">
+                                        <label class="recharge-radio">
+                                            <span class="f-ib"><input type="radio" name="rechargeKjzf"></span>
+                                            <span class="f-ib">中国工商银行</span>
+                                        </label>
+                                    </div>
+                                    <div class="item-kjzf f-toe">
+                                        <label class="recharge-radio">
+                                            <span class="f-ib"><input type="radio" name="rechargeKjzf"></span>
+                                            <span class="f-ib">中国农业银行</span>
+                                        </label>
+                                    </div>
+                                    <div class="item-kjzf f-toe">
+                                        <label class="recharge-radio">
+                                            <span class="f-ib"><input type="radio" name="rechargeKjzf"></span>
+                                            <span class="f-ib">中国银行</span>
+                                        </label>
+                                    </div>
+                                    <div class="item-kjzf f-toe">
+                                        <label class="recharge-radio">
+                                            <span class="f-ib"><input type="radio" name="rechargeKjzf"></span>
+                                            <span class="f-ib">中国建设银行</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="margin: 0 0.24rem 0.3rem 0.24rem;">
+                            <button type="button" class="login-btn" id="submitSelCard">确认</button>
+                        </div>
+                    </div>
+
+                    <div class="recharge-scene js-scene-sel-surecard">
+                        <div class="my-recharge-fd color-cus" style="margin-bottom: 0.3rem;">
+                            <div style="padding: 0.34rem;">
+                                <div class="f-fs028 color-cus">银行卡转账-中国工商银行</div>
+
+                                <div style="margin-top: 0.44rem;">
+                                    <div class="my-recharge-tab" id="rechargeTab">
+                                        <div class="my-recharge-tab-menu">
+                                            <ul class="f-cb">
+                                                <li class="active"><a href="javascript:;">梁晓燕</a></li>
+                                                <li><a href="javascript:;">刘刚</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="my-recharge-tab-ctn">
+                                            <div class="my-recharge-tab-item active">
+                                                <div class="tab-item f-cb">
+                                                    <div class="tab-label">会员账号：</div>
+                                                    <div class="tab-after"><input type="text" class="input1" value="1753456001" readonly></div>
+                                                </div>
+                                                <div class="tab-item f-cb">
+                                                    <div class="tab-label">充值金额：</div>
+                                                    <div class="tab-after"><input type="text" class="input1 js-syn-price" value="99.99" readonly></div>
+                                                </div>
+                                                <div class="tab-item f-cb">
+                                                    <div class="tab-label">存款人姓名：</div>
+                                                    <div class="tab-after"><input type="text" class="input2"></div>
+                                                </div>
+                                            </div>
+                                            <div class="my-recharge-tab-item">
+                                                <div class="tab-item f-cb">
+                                                    <div class="tab-label">会员账号：</div>
+                                                    <div class="tab-after"><input type="text" class="input1" value="1753456002" readonly></div>
+                                                </div>
+                                                <div class="tab-item f-cb">
+                                                    <div class="tab-label">充值金额：</div>
+                                                    <div class="tab-after"><input type="text" class="input1 js-syn-price" value="99.99" readonly></div>
+                                                </div>
+                                                <div class="tab-item f-cb">
+                                                    <div class="tab-label">存款人姓名：</div>
+                                                    <div class="tab-after"><input type="text" class="input2"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="f-cb" style="padding: 0.6rem 0.55rem 0 0.55rem ;">
+                                    <div class="f-fl">
+                                        <a href="javascript:;" class="my-btn-purple" id="prev">返回</a>
+                                    </div>
+                                    <div class="f-fr">
+                                        <a href="javascript:;" class="my-btn-orange" id="submitSureCard">下一步</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recharge-scene js-scene-sel-sureinfo">
+                        <div class="my-recharge-fd color-cus" style="margin-bottom: 0.3rem;">
+                            <div style="padding: 0.34rem;">
+                                <div class="f-fs028 color-cus">银行卡转账-中国工商银行</div>
+
+                                <div class="my-recharge-info">
+                                    <div class="my-recharge-info-item">
+                                        <div class="f-cb">
+                                            <div class="info-label">转账收款银行信息</div>
+                                        </div>
+                                    </div>
+                                    <div class="my-recharge-info-item">
+                                        <div class="f-cb">
+                                            <div class="info-label">收款人：<span class="color-white">梁晓燕</span></div>
+                                        </div>
+                                        <div class="f-cb">
+                                            <div class="info-label">收款账号：<span class="color-white">123</span></div>
+                                            <div class="info-after">
+                                                <a href="javascript:;" class="info-btn">复制</a>
+                                            </div>
+                                        </div>
+                                        <div class="f-cb">
+                                            <div class="info-label">开户网点：<span class="color-white">123</span></div>
+                                            <div class="info-after">
+                                                <a href="javascript:;" class="info-btn">复制</a>
+                                            </div>
+                                        </div>
+                                        <div class="f-cb">
+                                            <div class="info-label">开户银行：<span class="color-white">123</span></div>
+                                            <div class="info-after">
+                                                <a href="javascript:;" class="info-btn">复制</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my-recharge-info-item">
+                                        <div class="f-cb">
+                                            <div class="info-label">订单号：<span class="color-white">123</span></div>
+                                            <div class="info-after">
+                                                <a href="javascript:;" class="info-btn">复制</a>
+                                            </div>
+                                        </div>
+                                        <div class="f-cb">
+                                            <div class="info-label">存入金额：<span class="color-white">123</span></div>
+                                            <div class="info-after">
+                                                <a href="javascript:;" class="info-btn">复制</a>
+                                            </div>
+                                        </div>
+                                        <div class="f-cb">
+                                            <div class="info-label">会员账号：<span class="color-white">123</span></div>
+                                            <div class="info-after">
+                                                <a href="javascript:;" class="info-btn">复制</a>
+                                            </div>
+                                        </div>
+                                        <div class="f-cb">
+                                            <div class="info-label">存款人姓名：<span class="color-white">123</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="my-recharge-info-item f-fs020" style="line-height: 0.3rem;">
+                                        <div style="color:#c083ff;">注意：</div>
+                                        <div class="f-mat20">1、请转账至上述指定账户完成入款，实际充值金额必须与提交金额一致</div>
+                                        <div>2、请您在支付时，添加备注为您的订单号</div>
+                                    </div>
+                                </div>
+
+                                <div class="f-cb" style="padding: 0.6rem 0.55rem 0 0.55rem ;">
+                                    <div class="f-fl">
+                                        <a href="javascript:;" class="my-btn-purple" id="cancelRequest">撤销申请单</a>
+                                    </div>
+                                    <div class="f-fr">
+                                        <a href="javascript:;" class="my-btn-orange" id="confirmePayment">已付款确认</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../../Conent/Tools/zepto/zepto.min.js"></script>
+<script src="../../Conent/Scripts/common.js"></script>
+<script src="../../Conent/Scripts/my/recharge.js"></script>
+</body>
+</html>

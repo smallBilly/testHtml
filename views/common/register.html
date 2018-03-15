@@ -1,0 +1,74 @@
+<!doctype html>
+<html class="specil-bg" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="msapplication-tap-highlight" content="no">
+    <script src="../../Conent/Scripts/fixScreen.js"></script>
+    <link rel="stylesheet" href="../../Conent/Fonts/Awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../Conent/Tools/dialog2/css/dialog.css">
+    <link rel="stylesheet" href="../../Conent/Styles/common.css">
+</head>
+<body>
+<div class="root">
+    <div class="navbar">
+        <div class="navbar-inner navbar-previous" aria-hidden="true">
+            <div class="left">
+                <a href="javascript:;" class="back">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            </div>
+            <div class="title sliding">注册</div>
+            <div class="right"></div>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="page-content">
+            <form class="login" style="margin-top: 0.85rem;">
+                <div class="login-item">
+                    <i class="icon-cal login-item-icon"></i>
+                    <input class="login-input" type="number" name="phone" placeholder="手机号">
+                </div>
+                <div class="login-item">
+                    <i class="icon-iphone login-item-icon"></i>
+                    <button type="button" class="icon-zcord login-item-icon" id="zcode">获取验证码</button>
+                    <input class="login-input" type="number" name="code" placeholder="验证码">
+                </div>
+                <div class="login-item">
+                    <i class="icon-lock login-item-icon"></i>
+                    <input class="login-input" type="password" name="password" placeholder="请输入8-20位数字和字母组合">
+                </div>
+                <div class="login-item">
+                    <i class="icon-lock login-item-icon"></i>
+                    <input class="login-input" type="password" name="password2" placeholder="请再次输入密码">
+                </div>
+                <div class="login-item">
+                    <i class="icon-addfriend login-item-icon"></i>
+                    <input class="login-input" type="text" name="addFriend" placeholder="邀请码">
+                </div>
+                <div class="login-item login-xieyi" style="font-size: 0.22rem;">
+                    <i class="icon-login-uncheck"></i>
+                    <div class="f-ib">
+                        <span>同意接受</span>
+                        <a href="javascript:;" class="link">《风险提示书》</a>
+                        <span>以及</span>
+                        <a href="javascript:;" class="link">《客户协议》</a>
+                    </div>
+                </div>
+                <div class="login-item">
+                    <button type="button" class="login-btn" id="submit">注册</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="../../Conent/Tools/zepto/zepto.min.js"></script>
+<script src="../../Conent/Tools/dialog2/dialog.min.js"></script>
+<script src="../../Conent/Scripts/common.js"></script>
+<script src="../../Conent/Scripts/userlogin/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!doctype html>
+<html class="specil-bg" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绑定银行卡</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="msapplication-tap-highlight" content="no">
+    <script src="../../Conent/Scripts/fixScreen.js"></script>
+    <link rel="stylesheet" href="../../Conent/Fonts/Awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../Conent/Tools/mobileSelect/mobileSelect.css">
+    <link rel="stylesheet" href="../../Conent/Styles/common.css">
+</head>
+<body>
+<div class="root">
+    <div class="navbar">
+        <div class="navbar-inner navbar-previous" aria-hidden="true">
+            <div class="left">
+                <a href="javascript:;" class="back">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            </div>
+            <div class="title sliding">绑定银行卡</div>
+            <div class="right"></div>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="page-content">
+            <div>
+                <form class="my-form">
+                    <div class="f-cb" style="margin-bottom: 0.2rem;">
+                        <div class="f-fr f-fs018 color-cus">带 * 号为必填项</div>
+                    </div>
+                    <div class="my-form-item f-cb">
+                        <div class="my-form-label f-fl">
+                            <span class="f-ib my-form-name">* 卡类型</span>：
+                        </div>
+                        <div class="my-form-after f-fl">
+                            <!--<select class="my-form-select">
+                                <option value="">请选择所在的省市</option>
+                                <option value="中国农业银行">中国农业银行</option>
+                                <option value="中国农业银行1">中国农业银行1</option>
+                                <option value="中国农业银行2">中国农业银行2</option>
+                                <option value="中国农业银行3">中国农业银行3</option>
+                                <option value="中国农业银行4">中国农业银行4</option>
+                                <option value="中国农业银行5">中国农业银行5</option>
+                                <option value="中国农业银行6">中国农业银行6</option>
+                                <option value="中国农业银行7">中国农业银行7</option>
+                                <option value="中国农业银行8">中国农业银行8</option>
+                            </select>-->
+
+                            <div class="my-form-select" id="selectCardType">请选择银行</div>
+                            <input type="hidden" id="cardType" value="">
+                            <i class="my-form-select-arrow"></i>
+                        </div>
+                    </div>
+                    <div class="my-form-item f-cb">
+                        <div class="my-form-label f-fl">
+                            <span class="f-ib my-form-name">* 银行账号</span>：
+                        </div>
+                        <div class="my-form-after f-fl">
+                            <input type="text" class="my-form-input" placeholder="请输入开户人的银行账号">
+                        </div>
+                    </div>
+                    <div class="my-form-item f-cb">
+                        <div class="my-form-label f-fl">
+                            <span class="f-ib my-form-name">* 手机号码</span>：
+                        </div>
+                        <div class="my-form-after f-fl">
+                            <input type="text" class="my-form-input" placeholder="请输入银行预留手机号码">
+                        </div>
+                    </div>
+                    <div class="my-form-item f-cb">
+                        <div class="my-form-label f-fl">
+                            <span class="f-ib my-form-name">* 开户人</span>：
+                        </div>
+                        <div class="my-form-after f-fl">
+                            <input type="text" class="my-form-input" placeholder="请输入开户人姓名">
+                        </div>
+                    </div>
+                    <div class="my-form-item f-cb">
+                        <div class="my-form-label f-fl">
+                            <span class="f-ib my-form-name">* 身份证号</span>：
+                        </div>
+                        <div class="my-form-after f-fl">
+                            <input type="text" class="my-form-input" placeholder="请输入开户人的身份证号">
+                        </div>
+                    </div>
+                    <div class="my-form-item f-cb">
+                        <div class="my-form-label f-fl">
+                            <span class="f-ib my-form-name">* 开户地</span>：
+                        </div>
+                        <div class="my-form-after f-fl">
+                            <!--<select class="my-form-select">
+                                <option value="">请选择所在的省市</option>
+                                <option value="中国农业银行">中国农业银行</option>
+                                <option value="中国农业银行1">中国农业银行1</option>
+                                <option value="中国农业银行2">中国农业银行2</option>
+                                <option value="中国农业银行3">中国农业银行3</option>
+                                <option value="中国农业银行4">中国农业银行4</option>
+                                <option value="中国农业银行5">中国农业银行5</option>
+                                <option value="中国农业银行6">中国农业银行6</option>
+                                <option value="中国农业银行7">中国农业银行7</option>
+                                <option value="中国农业银行8">中国农业银行8</option>
+                            </select>-->
+
+                            <div class="my-form-select" id="selectProvincesCity">请选择所在的省市</div>
+                            <input type="hidden" id="provincesCity" value="">
+                            <i class="my-form-select-arrow"></i>
+                        </div>
+                    </div>
+                    <div class="my-form-item f-cb">
+                        <div class="my-form-label f-fl">
+                            <span class="f-ib my-form-name">* 支行名称</span>：
+                        </div>
+                        <div class="my-form-after f-fl">
+                            <input type="text" class="my-form-input" placeholder="请输入支行名称">
+                        </div>
+                    </div>
+                    <div class="my-form-item f-cb">
+                        <div class="my-form-label f-fl">
+                            <span class="f-ib my-form-name">* 密码</span>：
+                        </div>
+                        <div class="my-form-after f-fl">
+                            <input type="text" class="my-form-input" placeholder="请输入您的资金密码">
+                        </div>
+                    </div>
+                    <div class="f-fs022 color-cus">
+                        <i class="icon-login-uncheck"></i>
+                        <div class="f-ib">
+                            <span>同意接受</span>
+                            <a href="javascript:;" class="link">《我们的条款》</a>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="login-btn" id="submit">提交</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../../Conent/Tools/zepto/zepto.min.js"></script>
+<script src="../../Conent/Tools/mobileSelect/mobileSelect.min.js"></script>
+<script src="../../Conent/Scripts/address3.js"></script>
+<script src="../../Conent/Scripts/common.js"></script>
+<script src="../../Conent/Scripts/my/bindBankCard.js"></script>
+</body>
+</html>
